@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Date Finder</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+    <script src="/static/js/main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Matrix Date Finder</h1>
+        <form method="POST" id="date-form">
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            <input type="text" name="date" placeholder="Date (DD/MM/YYYY)" id="date-input" required>
+            <button type="submit">Find Day of the Week</button>
+        </form>
+        {% if day_of_week %}
+        <div class="result">
+            <p>Day of the week: {{ day_of_week }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+    background-color: black;
+    font-family: 'Orbitron', sans-serif;
+    color: lime;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+input, button {
+    font-family: 'Orbitron', sans-serif;
+    background-color: black;
+    border: 1px solid lime;
+    color: lime;
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 20px;
+}
